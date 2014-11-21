@@ -197,7 +197,6 @@ Template Name: Contact
 									$two = rand(1, 9);
 									$result = md5($one + $two); ?>
 									<p>
-									<span>Please answer the following to confirm you're human.</span>
 									<label for="kad_captcha"><b><?php echo $one.' + '.$two; ?> = </b></label>
 									<input type="text" name="kad_captcha" id="kad_captcha" class="required requiredField kad_captcha kad-quarter" />
 									<?php if(isset($kad_captchaError)) { ?><label class="error"><?php echo $kad_captchaError;?></label><?php } ?>
